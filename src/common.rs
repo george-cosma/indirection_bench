@@ -1,5 +1,6 @@
 pub type FunctionIndex = usize;
 
+#[derive(Debug, Clone, size_of::SizeOf)]
 pub enum Function {
     Local {
         name: String,
@@ -13,6 +14,7 @@ pub enum Function {
     },
 }
 
+#[derive(Debug, size_of::SizeOf)]
 pub struct Module {
     pub name: String,
     pub funcs: Vec<Function>,

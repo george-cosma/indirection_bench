@@ -1,6 +1,8 @@
 use crate::common::*;
+#[allow(unused_imports)]
 use std::collections::{BTreeMap, HashMap};
 
+#[derive(size_of::SizeOf)]
 pub struct DirectRuntime {
     pub master_module: Module,
     pub function_map: BTreeMap<String, FunctionIndex>,

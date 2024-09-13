@@ -1,6 +1,8 @@
 use crate::common::*;
+#[allow(unused_imports)]
 use std::collections::{BTreeMap, HashMap};
 
+#[derive(size_of::SizeOf)]
 pub struct IndirectRuntime {
     // module_name -> (module, function_name -> function_index)
     pub module_linker: BTreeMap<String, (Module, BTreeMap<String, FunctionIndex>)>,

@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 criterion = "0.5.1"
+size-of = "0.1.5"
 
 [[bench]]
 name = "both"
